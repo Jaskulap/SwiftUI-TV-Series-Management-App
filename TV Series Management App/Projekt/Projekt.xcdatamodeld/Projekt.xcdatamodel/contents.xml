@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="22A5266r" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="OdcinekEntity" representedClassName="OdcinekEntity" syncable="YES">
+        <attribute name="czyDodanoOdcinek" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tytul" optional="YES" attributeType="String"/>
+        <relationship name="toSerialEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SerialEntity" inverseName="toOdcinekEntity" inverseEntity="SerialEntity"/>
+    </entity>
+    <entity name="SerialEntity" representedClassName="SerialEntity" syncable="YES">
+        <attribute name="dodano" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="iloscOdcinkow" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="napis" optional="YES" attributeType="String"/>
+        <attribute name="obrazek" optional="YES" attributeType="String"/>
+        <attribute name="obrazek2" optional="YES" attributeType="String"/>
+        <attribute name="obrazekP" optional="YES" attributeType="String"/>
+        <attribute name="ocena" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sredniCzasOdcinka" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="streszczenie" optional="YES" attributeType="String"/>
+        <attribute name="tag" optional="YES" attributeType="String"/>
+        <relationship name="toOdcinekEntity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OdcinekEntity" inverseName="toSerialEntity" inverseEntity="OdcinekEntity"/>
+    </entity>
+</model>
