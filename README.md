@@ -1,1 +1,2 @@
 # TV-Series-Management-App
+A simple application to manage  tv series using CoreData. Series can be added to profile list and it is possible to mark watched episodes. Simple statistics are available. It is possible to change the theme in the settings (Light - Dark). You can also add your own series. For now, pictures of the panel or series view are available only for selected series (with saved assets), other series added by the User do not have pictures available.
